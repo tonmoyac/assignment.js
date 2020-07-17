@@ -2,14 +2,14 @@ function feetToMile(feet)
         {
         let mile = feet/5280;
         if(feet<0){
-            console.log("Distance Cannot be Negative");
-            return 0;
-            }
-            else{
-                return mile;
-            }
+        console.log("Distance Cannot be Negative");
+        return 0;
         }
-    var result = feetToMile(-1000000);
+        else{
+        return mile;
+        }
+    }
+    var result = feetToMile(10560);
     console.log("Your Result is:", result.toFixed(2), "Miles");
 
 function woodCalculator(chair, table, bed)
@@ -24,10 +24,10 @@ function woodCalculator(chair, table, bed)
         return 0;
         }
         else{
-            return totalWood;
+        return totalWood;
         }
     }
-    var neededWood = woodCalculator(10, 10, 10);
+    var neededWood = woodCalculator(20, 20, 20);
     console.log("Total Needed Wood is:", neededWood, "Cubic Feet");
 
 function brickCalculator(floor)
@@ -54,5 +54,23 @@ function brickCalculator(floor)
         }
     }
     
-    var neededEit = brickCalculator(11);
+    var neededEit = brickCalculator(30);
 
+function tinyFriend(string)
+        {
+        var names = string;  
+        var shortName;
+        var shortestLength = names[0].length;
+
+        for(var i = 0; i < names.length; i++)
+        {
+        if(names[i].length < shortestLength){
+        shortestLength = names[i].length;   
+        shortName = names[i];            
+        }
+        }
+        return shortName;
+    }
+
+var result= tinyFriend(['Tonmoy', 'Washim', 'Md.Kokha', 'Anik',]);
+console.log("Tiny Friend is :", result);
