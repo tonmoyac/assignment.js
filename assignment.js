@@ -37,19 +37,19 @@ function brickCalculator(floor)
         if(floor<=10){
 
         numberOfBricks=floor*15*1000;
-        console.log("Required Number of bricks is:" ,numberOfBricks);
+        console.log("Required Number of bricks is:" , numberOfBricks);
         return ;
         }
 
-        if(floor<=20){
+        else if(floor<=20){
         numberOfBricks=floor*12*1000;
-        console.log("Required Number of bricks is:" ,numberOfBricks);
+        console.log("Required Number of bricks is:" , numberOfBricks);
         return;
         }
 
         else{
         numberOfBricks=floor*10*1000;
-        console.log("Required Number of bricks is:" ,numberOfBricks);
+        console.log("Required Number of bricks is:" , numberOfBricks);
         return;
         }
     }
