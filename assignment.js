@@ -58,9 +58,9 @@ function brickCalculator(floor)
 
 function tinyFriend(string)
         {
-        var names = string;  
-        var shortName;
-        var shortestLength = names[0].length;
+        let names = string;  
+        let shortName;
+        let shortestLength = names[0].length;
 
         for(var i = 0; i < names.length; i++)
         {
